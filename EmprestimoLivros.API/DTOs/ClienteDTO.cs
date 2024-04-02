@@ -18,5 +18,13 @@ namespace EmprestimoLivros.API.DTOs
         [MinLength(14)]
         public string CliCPF { get; set; }
 
+        [Required]
+        [StringLength(20)]
+        public string CliEndereco { get; set; }
+
+        [Required]
+        [StringLength(20)]
+        public string CliBairro { get; set; }
+
     }
 }

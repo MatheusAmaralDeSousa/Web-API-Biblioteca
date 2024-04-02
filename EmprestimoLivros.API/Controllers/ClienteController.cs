@@ -23,10 +23,10 @@ namespace EmprestimoLivros.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cliente>>> GetClientes()
         {
-            var cliente = await _clienteRepository.GetAll();
-            var ClienteDTO = _mapper.Map<ClienteDTO>(cliente);
+            var clientes = await _clienteRepository.GetAll();
+            var ClientesDTO = _mapper.Map<IEnumerable<ClienteDTO>>(clientes);
 
-            return Ok(ClienteDTO);
+            return Ok(ClientesDTO);
         }
         [HttpPost]
         public async Task<ActionResult> AddClient(Cliente cliente)
