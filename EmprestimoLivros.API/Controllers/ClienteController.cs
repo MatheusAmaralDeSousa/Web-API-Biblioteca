@@ -29,8 +29,10 @@ namespace EmprestimoLivros.API.Controllers
             return Ok(ClientesDTO);
         }
         [HttpPost]
-        public async Task<ActionResult> AddClient(Cliente cliente)
+        public async Task<ActionResult> AddClient(ClienteDTO clienteDTO)
         {
+            //Mapeamento inverso, mapeia de ClienteDTO para Cliente
+            var cliente =  _mapper.Map<Cliente>(clienteDTO);
             _clienteRepository.Add(cliente);
 
             if (await _clienteRepository.SaveAllAsync())
@@ -41,8 +43,20 @@ namespace EmprestimoLivros.API.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> EditClient(Cliente cliente)
+        public async Task<ActionResult> EditClient(ClienteDTO clienteDTO)
         {
+            if (clienteDTO.IdCliente == 0)
+            {
+                return BadRequest("Não é possivel alterar o cliente. É preciso informar o ID");
+            }
+
+            var clienteExiste = await _clienteRepository.GetById(clienteDTO.IdCliente);
+
+            if(clienteExiste == null)
+            {
+                return NotFound("Cliente não encontrado");
+            }
+            var cliente = _mapper.Map<Cliente>(clienteDTO);
             _clienteRepository.Edit(cliente);
             if (await _clienteRepository.SaveAllAsync())
             {
