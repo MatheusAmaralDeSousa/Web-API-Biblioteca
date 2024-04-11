@@ -1,8 +1,8 @@
-﻿using EmprestimoLivros.API.Modelos;
+﻿using EmprestimoLivros.Domain.Modelos;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace EmprestimoLivros.API.DTOs
+namespace EmprestimoLivros.Application.DTOs
 {
     public class ClienteDTO
     {

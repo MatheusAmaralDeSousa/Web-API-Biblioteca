@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using EmprestimoLivros.API.DTOs;
-using EmprestimoLivros.API.Modelos;
+using EmprestimoLivros.Application.DTOs;
+using EmprestimoLivros.Domain.Modelos;
 
-namespace EmprestimoLivros.API.Mappings
+namespace EmprestimoLivros.Application.Mappings
 {
     public class EntitiesToDTOMappingProfile : Profile
     {

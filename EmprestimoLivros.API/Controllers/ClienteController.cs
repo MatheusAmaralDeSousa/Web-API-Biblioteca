@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using EmprestimoLivros.API.DTOs;
-using EmprestimoLivros.API.Interface;
-using EmprestimoLivros.API.Modelos;
-using EmprestimoLivros.API.Repository;
+using EmprestimoLivros.Application.DTOs;
+using EmprestimoLivros.Domain.Interface;
+using EmprestimoLivros.Domain.Modelos;
+using EmprestimoLivros.Infra.Data.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmprestimoLivros.API.Controllers

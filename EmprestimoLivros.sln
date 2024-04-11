@@ -5,6 +5,14 @@ VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmprestimoLivros.API", "EmprestimoLivros.API\EmprestimoLivros.API.csproj", "{0955ABED-DAFB-4F87-8DDC-8C3FAD4509B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmprestimoLivros.Domain", "EmprestimoLivros.Domain\EmprestimoLivros.Domain.csproj", "{1CBA4573-991F-4011-A2F7-BEA6AAF978AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmprestimoLivros.Infra.Data", "EmprestimoLivros.Infra.Data\EmprestimoLivros.Infra.Data.csproj", "{A17D5F19-8745-43B4-A853-B08CBE616113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmprestimoLivros.Infra.Ioc", "EmprestimoLivros.Infra.Ioc\EmprestimoLivros.Infra.Ioc.csproj", "{505DA5E5-1D79-4574-94DF-CEF1CA945DA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmprestimoLivros.Application", "EmprestimoLivros.Application\EmprestimoLivros.Application.csproj", "{51E78494-5D14-41A3-8E1A-410F392CD53B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{0955ABED-DAFB-4F87-8DDC-8C3FAD4509B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0955ABED-DAFB-4F87-8DDC-8C3FAD4509B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0955ABED-DAFB-4F87-8DDC-8C3FAD4509B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CBA4573-991F-4011-A2F7-BEA6AAF978AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CBA4573-991F-4011-A2F7-BEA6AAF978AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CBA4573-991F-4011-A2F7-BEA6AAF978AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CBA4573-991F-4011-A2F7-BEA6AAF978AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A17D5F19-8745-43B4-A853-B08CBE616113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A17D5F19-8745-43B4-A853-B08CBE616113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A17D5F19-8745-43B4-A853-B08CBE616113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A17D5F19-8745-43B4-A853-B08CBE616113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{505DA5E5-1D79-4574-94DF-CEF1CA945DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{505DA5E5-1D79-4574-94DF-CEF1CA945DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{505DA5E5-1D79-4574-94DF-CEF1CA945DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{505DA5E5-1D79-4574-94DF-CEF1CA945DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E78494-5D14-41A3-8E1A-410F392CD53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E78494-5D14-41A3-8E1A-410F392CD53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E78494-5D14-41A3-8E1A-410F392CD53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E78494-5D14-41A3-8E1A-410F392CD53B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

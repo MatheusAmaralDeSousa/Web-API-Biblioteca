@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EmprestimoLivros.API.Modelos;
+namespace EmprestimoLivros.Domain.Modelos;
 
 public class Cliente
 {

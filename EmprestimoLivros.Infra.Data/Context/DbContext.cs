@@ -1,8 +1,8 @@
-﻿using EmprestimoLivros.API.Modelos;
+﻿using EmprestimoLivros.Domain.Modelos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace EmprestimoLivros.API.Context
+namespace EmprestimoLivros.Infra.Data.Context
 {
     public class BibliotecaContext : DbContext
     {

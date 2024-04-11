@@ -1,6 +1,6 @@
-﻿using EmprestimoLivros.API.Modelos;
+﻿using EmprestimoLivros.Domain.Modelos;
 
-namespace EmprestimoLivros.API.Interface
+namespace EmprestimoLivros.Domain.Interface
 {
     public interface IClienteRepository
     {

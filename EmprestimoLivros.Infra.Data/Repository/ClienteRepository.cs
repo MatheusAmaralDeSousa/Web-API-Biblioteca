@@ -1,10 +1,9 @@
-﻿using EmprestimoLivros.API.Context;
-using EmprestimoLivros.API.Interface;
-using EmprestimoLivros.API.Modelos;
-using Microsoft.AspNetCore.Connections;
+﻿using EmprestimoLivros.Infra.Data.Context;
+using EmprestimoLivros.Domain.Interface;
+using EmprestimoLivros.Domain.Modelos;
 using Microsoft.EntityFrameworkCore;
 
-namespace EmprestimoLivros.API.Repository
+namespace EmprestimoLivros.Infra.Data.Repository
 {
     public class ClienteRepository : IClienteRepository
     {
@@ -26,7 +25,8 @@ namespace EmprestimoLivros.API.Repository
         {
             _context.Clientes.Remove(cliente);
         }
-        public async Task<Cliente> GetById(int id){
+        public async Task<Cliente> GetById(int id)
+        {
             //await e usado para a tarefa aguarda e conseguir retornar o cliente
             var cliente = await _context.Clientes.SingleOrDefaultAsync(x => x.IdCliente == id);
             return cliente;
@@ -35,10 +35,12 @@ namespace EmprestimoLivros.API.Repository
         {
             return await _context.Clientes.ToListAsync();
         }
-        public async Task<bool> SaveAllAsync() { 
+        public async Task<bool> SaveAllAsync()
+        {
             //Se for maior que 0, signifca que salvou corretamente.
             //Caso contrário ele retornará com um erro(Erro de banco, não salva no banco).
-            return await _context.SaveChangesAsync() > 0; 
+            return await _context.SaveChangesAsync() > 0;
         }
+
     }
 }

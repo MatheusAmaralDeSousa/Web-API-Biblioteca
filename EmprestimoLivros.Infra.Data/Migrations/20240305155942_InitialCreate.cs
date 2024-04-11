@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace EmprestimoLivros.API.Migrations
+namespace EmprestimoLivros.Domain.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
